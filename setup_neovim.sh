@@ -1,5 +1,6 @@
 #!/bin/sh
 
+apt-get update
 # Install neovim
 apt-get install software-properties-common
 apt-add-repository ppa:neovim-ppa/stable
