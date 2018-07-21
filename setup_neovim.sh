@@ -18,9 +18,8 @@ update-alternatives --config editor
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# Clone neovim profile:
+# Clone neovim profile and copy profile:
 git clone https://github.com/elalaouifaris/neovim_config.git
-
-# Make an alias to the github init.vim
 mkdir -p ~/.config/nvim/
 cp ./neovim_config/w_init.vim ~/.config/nvim/init.vim
+rm -rf neovim.config
